@@ -27,6 +27,7 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+<<<<<<< HEAD
 
 
 ### INTEGRANTES :feelsgood:
@@ -38,3 +39,5 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 :point_right: KAREN
 
 
+=======
+>>>>>>> noticias
