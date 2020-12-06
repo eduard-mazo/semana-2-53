@@ -2,12 +2,10 @@
   <div id="app">
     <header-page></header-page>
     <noticias></noticias>
-    <div class="container container-fluid w-1200px">
-        <div class="row justify-content-center mb-5">
-          <div class="col mt-5" v-for="(item, index) of team" :key="index">
-            <team-card class="mh-100" style="height: 700px; width:198px;" v-bind:member="item"></team-card>
-          </div>
-        </div>
+    <div class="container w-1200px mt-3">
+      <div class="card-deck">
+          <team-card v-for="(item, index) of team" :key="index" v-bind:member="item"></team-card>
+      </div>
     </div>
   </div>
 </template>
@@ -23,7 +21,7 @@ export default {
     Noticias,
     HeaderPage
   },
-  data(){
+  data() {
     return{
       team: [
           {
