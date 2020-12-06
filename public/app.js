@@ -34,6 +34,14 @@ for (i = 1; i <= 4; i++) {
     movieActors.textContent = "TIPO: " + data.Search[i-1].Type;
 
 }
+for (i = 1; i <= 4; i++) {
+
+    const moviehTitle= document.querySelector("#titleh"+i);
+     moviehTitle.textContent = data.Search[i-1].Title;
+
+    const moviehYear= document.querySelector("#yearh"+i);
+    moviehYear.textContent = data.Search[i-1].Year;
+}
 })
 
 
