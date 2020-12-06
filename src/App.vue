@@ -30,9 +30,9 @@ export default {
           {
               codigo: "2",
               nombre: "Alvaro Julián Manrique Gomez",
-              descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris condimentum ac elit et accumsan. Mauris condimentum ac elit et accumsan." ,
+              descripcion: "Estadístico egresado de la Universidad Nacional. Gran entusiasta de los videojuegos y el fútbol." ,
               rol: "Backend Developer ",
-              image: require("@/assets/avatar.png"),
+              image: require("@/assets/Julian.jpeg"),
           },
           {
               codigo: "3",
