@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <header-page></header-page>
     <noticias></noticias>
     <div class="container-fluid">
         <div class="row justify-content-center mb-5">
@@ -14,11 +15,13 @@
 <script>
 import TeamCard from './components/TeamCard.vue';
 import Noticias from './components/noticias.vue';
+import HeaderPage from "./components/header.vue";
 export default {
   name: 'App',
   components: {
     TeamCard,
-    Noticias
+    Noticias,
+    HeaderPage
   },
   data(){
     return{
