@@ -1,6 +1,6 @@
 <template>   
-    <div class="card text-white bg-info mb-3 w-1200px">
-        <img class="card-img-top" v-bind:src="member.image"  alt="Card image" style="width:100%">
+    <div class=" container card text-white bg-dark mb-3 w-1200px">
+        <img class="card-img-top mt-2" v-bind:src="member.image"  alt="Card image" style="width:100%">
         <div class="card-body">
             <h4 class="card-title">{{ member.nombre }}</h4>
             <h6 class="card-title">{{ member.rol }}</h6>

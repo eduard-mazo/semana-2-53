@@ -2,10 +2,10 @@
   <div id="app">
     <header-page></header-page>
     <noticias></noticias>
-    <div class="container-fluid">
+    <div class="container container-fluid w-1200px">
         <div class="row justify-content-center mb-5">
           <div class="col mt-5" v-for="(item, index) of team" :key="index">
-            <team-card v-bind:member="item"></team-card>
+            <team-card class="mh-100" style="height: 700px; width:198px;" v-bind:member="item"></team-card>
           </div>
         </div>
     </div>

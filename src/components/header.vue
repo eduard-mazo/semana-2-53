@@ -26,22 +26,24 @@
         <div class="carousel-item active">
           <img src="../assets/banner1.png" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h5>First slide label</h5>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <div id= "titleh1" class = "h3 bg-light text-dark text-uppercase"></div>
+            <div id= "yearh1" class = "h4 bg-light text-dark"></div>
+            <div id= "actorsh1" class = "h4 bg-light text-dark"></div>
           </div>
         </div>
         <div class="carousel-item">
           <img src="../assets/banner2.png" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h5>Second slide label</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div id= "titleh2" class = "h3 bg-light text-dark text-uppercase" ></div>
+            <div id= "yearh2" class = "h4 bg-light text-dark"></div>
+            <div id= "actorsh2" class = "h4 bg-light text-dark"></div>
           </div>
         </div>
         <div class="carousel-item">
           <img src="../assets/banner3.png" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            <div id= "titleh3" class = "h3 bg-light text-dark text-uppercase "></div>
+            <div id= "yearh3" class = "h4 bg-light text-dark"></div>
           </div>
         </div>
       </div>
