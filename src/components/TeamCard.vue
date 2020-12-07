@@ -1,5 +1,5 @@
 <template>
-        <div class="card bg-dark w-1200px">
+        <div id="equipo" class="card bg-dark">
             <img class="card-img-top" v-bind:src="member.image" alt="Card image cap">
             <div class="card-body">
                 <h4 class="card-title text-white">{{ member.nombre }}</h4>

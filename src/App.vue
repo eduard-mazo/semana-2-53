@@ -7,6 +7,7 @@
           <team-card v-for="(item, index) of team" :key="index" v-bind:member="item"></team-card>
       </div>
     </div>
+    <footer-page></footer-page>
   </div>
 </template>
 
@@ -14,12 +15,14 @@
 import TeamCard from './components/TeamCard.vue';
 import Noticias from './components/noticias.vue';
 import HeaderPage from "./components/header.vue";
+import FooterPage from "./components/footer.vue";
 export default {
   name: 'App',
   components: {
     TeamCard,
     Noticias,
-    HeaderPage
+    HeaderPage,
+    FooterPage
   },
   data() {
     return{

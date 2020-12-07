@@ -1,5 +1,5 @@
 <template>
-    <div class= "container mt-3">
+    <div id="noticias" class= "container mt-3">
         <section id="news">
             <header class="section-title text-center container p-3 my-3 bg-dark text-white">
                 <h2>NOTICIAS</h2>
