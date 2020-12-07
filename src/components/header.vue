@@ -7,10 +7,10 @@
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav ml-auto">
                   <li class="nav-item active">
-                    <a class="nav-link" href="#noticias">Noticias</a>
+                    <a class="nav-link" href="#news">Noticias</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#equipo">Equipo</a>
+                    <a class="nav-link" href="#team">Equipo</a>
                   </li>
                 </ul>
               </div> 
