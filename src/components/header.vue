@@ -23,27 +23,12 @@
         <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
       </ol>
       <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="../assets/banner1.png" class="d-block w-100" alt="...">
+        <div v-for="(movie, key, index) in movies" :key="movie.imdbID" :class="['carousel-item', (index === 0 ? 'active' : '')]">
+          <img v-bind:src="require(`../assets/banner${index + 1}.png`)" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <div id= "titleh1" class = "h3 bg-light text-dark text-uppercase"></div>
-            <div id= "yearh1" class = "h4 bg-light text-dark"></div>
-            <div id= "actorsh1" class = "h4 bg-light text-dark"></div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="../assets/banner2.png" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <div id= "titleh2" class = "h3 bg-light text-dark text-uppercase" ></div>
-            <div id= "yearh2" class = "h4 bg-light text-dark"></div>
-            <div id= "actorsh2" class = "h4 bg-light text-dark"></div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="../assets/banner3.png" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <div id= "titleh3" class = "h3 bg-light text-dark text-uppercase "></div>
-            <div id= "yearh3" class = "h4 bg-light text-dark"></div>
+            <div class="h3 text-dark text-uppercase">{{movie.Title}}</div>
+            <div class="h4 text-dark">{{movie.Year}}</div>
+            <div class="h4 text-dark">{{movie.Released}}</div>
           </div>
         </div>
       </div>
@@ -60,10 +45,15 @@
 </template>
 
 <script>
-    export default {
-        name: "Header",
-        props: ['member']
-    }
+import movieApi from "../mixins/movieApi";
+export default {
+    data: () => ({
+      titles: ["up", "fast", "harry","her"]
+    }),
+    name: "Header",
+    props: ['member'],
+    mixins: [movieApi]
+}
 </script>
 
 <style scoped>

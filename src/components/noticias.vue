@@ -29,10 +29,8 @@ import movieApi from "../mixins/movieApi";
 export default {
     name: "Noticias",
     beforeMount() {
-        this.getFilm();
     },
     data: () => ({
-        movies: {},
         titles: ["up", "fast", "harry","her"]
     }),
     methods: {

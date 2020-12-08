@@ -1,4 +1,10 @@
 export default {
+    beforeMount() {
+        this.getFilm();
+    },
+    data: () => ({
+        movies: {}
+    }),
     methods: {
         reload() {
             this.$forceUpdate();
